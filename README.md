@@ -9,6 +9,7 @@
 -   [Reza Rasendriya Adi Putra - 123230030]
 -   [Valentino Abinata - 123230013]
 -   [Rheza Priya Anargya - 123230032]
+-   [Gusti Rama - 123230040]
 
 **Peta Struktur Interaktif & Pemodelan Kontak Fluida**
 
