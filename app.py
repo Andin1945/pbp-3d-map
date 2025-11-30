@@ -284,6 +284,20 @@ with st.sidebar:
     
     # --- EXPORT & SESSION MANAGEMENT ---
     with st.expander("💾 Export & Session", expanded=False):
+        st.markdown("### 📤 Export CSV")
+
+        if not df.empty:
+            csv_data = df.to_csv(index=False).encode('utf-8')
+
+            st.download_button(
+                label="⬇️ Download CSV Data",
+                data=csv_data,
+                file_name=f"reservoir_points_{datetime.now().strftime('%Y%m%d_%H%M%S')}.csv",
+                mime="text/csv"
+            )
+        else:
+            st.info("Belum ada data untuk diexport.")
+
         st.markdown("### 📤 Session Management")
         col_save1, col_save2 = st.columns(2)
         
